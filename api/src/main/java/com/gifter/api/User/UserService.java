@@ -1,5 +1,11 @@
 package com.gifter.api.User;
 
+import java.util.Optional;
+
 public interface UserService {
-    String getUser();
+
+    Optional<User> getUserById(Long id);
+
+    void createUser(RegisterDTO registerDTO);
+
 }
